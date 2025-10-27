@@ -1,0 +1,21 @@
+IMPORTANT: Plugin Hub Requirement
+===================================
+
+This plugin requires an icon.png file in the root directory for submission to the RuneLite Plugin Hub.
+
+Requirements:
+- File name: icon.png
+- Location: Root directory of the plugin (same level as build.gradle)
+- Dimensions: Recommended 64x64 pixels or 128x128 pixels
+- Format: PNG with transparency support
+- Content: Should represent the plugin's functionality (e.g., an eye with a slash through it, a hidden monster icon, etc.)
+
+The icon will be displayed in the RuneLite Plugin Hub and in the plugin configuration panel.
+
+To create the icon:
+1. Design a simple, clear icon that represents "hiding monsters"
+2. Save it as icon.png in this directory
+3. Ensure it's a square image (equal width and height)
+4. Use transparency for the background if desired
+
+Without this icon.png file, the plugin submission to the Plugin Hub will be rejected.
