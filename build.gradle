@@ -34,6 +34,14 @@ tasks.withType(JavaCompile).configureEach {
 	options.release.set(11)
 }
 
+tasks.register('runPlugin', JavaExec) {
+	group = 'application'
+	description = 'Launches RuneLite with the Monster Hider plugin loaded'
+	classpath = sourceSets.test.runtimeClasspath
+	mainClass.set('com.monsterhider.MonsterHiderPluginTest')
+	jvmArgs = ['-ea']
+}
+
 tasks.register('shadowJar', Jar) {
 	dependsOn configurations.testRuntimeClasspath
 	manifest {
